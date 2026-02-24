@@ -5,13 +5,16 @@ name: Primer workflow MIDU
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   learning:
-
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Hola mundo'
+      - name: "Hola mundo"
         run: echo 'Hello world'
+      - name: Dime la fecha
+        run: date
+      - name: Muestra el contenido del directorio
+        run: ls -la
