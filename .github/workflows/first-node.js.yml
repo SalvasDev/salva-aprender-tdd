@@ -6,6 +6,8 @@ name: Primer workflow MIDU
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   learning:
