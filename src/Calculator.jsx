@@ -1,4 +1,4 @@
-import { useState } from 'eact'
+import { useState } from 'react'
 import { evaluate } from 'mathjs'
 
 export const operations = ['+', '-', '*', '/']
