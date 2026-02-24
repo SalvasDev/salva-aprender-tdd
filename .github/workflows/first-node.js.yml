@@ -6,6 +6,12 @@ name: Primer workflow MIDU
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  
+concurrency: 
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   learning:
